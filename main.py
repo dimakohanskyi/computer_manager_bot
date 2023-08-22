@@ -36,55 +36,55 @@ async def send_welcome(message: types.Message):
     await message.reply("Choose an option:", reply_markup=reply_markup)
 
 
-@dp.message_handler(lambda message: message.text == 'Desktop')
+@dp.message_handler(lambda message: message.text == 'Desktop💻')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening desktop...")
     home_page()
 
 
-@dp.message_handler(lambda message: message.text == 'Chrome')
+@dp.message_handler(lambda message: message.text == 'Chrome🌐')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Chrome...")
     open_chrome()
 
 
-@dp.message_handler(lambda message: message.text == 'Edge')
+@dp.message_handler(lambda message: message.text == 'Edge🌐')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Edge browser...")
     open_edge()
 
 
-@dp.message_handler(lambda message: message.text == 'Discord')
+@dp.message_handler(lambda message: message.text == 'Discord📞')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Discord...")
     open_discord()
 
 
-@dp.message_handler(lambda message: message.text == 'Telegram')
+@dp.message_handler(lambda message: message.text == 'Telegram📱')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Telegram...")
     open_telegram()
 
 
-@dp.message_handler(lambda message: message.text == 'Steam')
+@dp.message_handler(lambda message: message.text == 'Steam🎮')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Steam...")
     open_steam()
 
 
-@dp.message_handler(lambda message: message.text == 'Binance')
+@dp.message_handler(lambda message: message.text == 'Binance📈')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Binance...")
     open_binance()
 
 
-@dp.message_handler(lambda message: message.text == 'Trello')
+@dp.message_handler(lambda message: message.text == 'Trello📌')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Trello...")
     open_trello()
 
 
-@dp.message_handler(lambda message: message.text == 'Spotify')
+@dp.message_handler(lambda message: message.text == 'Spotify🎧')
 async def open_chrome_handler(message: types.Message):
     await message.answer("Opening Spotify...")
     open_spotify()
@@ -101,7 +101,7 @@ async def take_screenshot_and_send(chat_id):
     os.remove(screenshot_path)
 
 
-@dp.message_handler(lambda message: message.text == 'ScreenShot')
+@dp.message_handler(lambda message: message.text == 'ScreenShot📺')
 async def screenshot_handler(message: types.Message):
     await take_screenshot_and_send(message.chat.id)
 
